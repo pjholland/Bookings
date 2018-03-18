@@ -5,6 +5,8 @@ import com.membership.Visitor;
 import com.membership.projectresouces.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import sun.java2d.loops.GeneralRenderer;
 
 import java.util.List;
@@ -17,16 +19,18 @@ public class BookingFormPage extends BasePage {
     String checkInDate = ("checkin");
     String checkOutDate = ("checkout");
     String saveButton = ("#form > div > div:nth-child(7) > input[type=\"button\"]");
+    String bookingForm = ("bookings");
 
-    public void open(){
+    public void open() throws InterruptedException {
         getDriver().get("http://hotel-test.equalexperts.io/");
-      // wait(1);
+        wait(0);
+
+        WebDriverWait wait = new WebDriverWait(getDriver(), 5);
+        wait.until(ExpectedConditions.elementToBeClickable(By.id("firstname")));
 
     }
 
     public void createNewVsitor() throws Exception {
-
-        //Faker faker = new Faker();
         type(Locators.id, firstName, "Jon");
         type(Locators.id, lastName, "Simm");
         type(Locators.id, deposit, "10");
@@ -37,6 +41,10 @@ public class BookingFormPage extends BasePage {
     }
 
     public void findBooking(){
+
+        WebDriverWait wait = new WebDriverWait(getDriver(), 5);
+        wait.until(ExpectedConditions.textToBePresentInElement(By.id("bookings"), "Simm"));
+
         getDriver().findElements(By.xpath(("//div[contains(@class, 'row') and contains(., 'Simm')]")));
 
     }
