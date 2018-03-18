@@ -2,27 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cf197e0-92f5-4690-8dce-d2f1961b9df6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/membership/pageobjects/ChangeYourDetailsPage.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/membership/pageobjects/DashboardPage.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/membership/pageobjects/ForgottenPasswordPage.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/membership/pageobjects/LandingPage.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/membership/pageobjects/NewRegistrationPage.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/membership/pageobjects/PaymentPage.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/membership/pageobjects/RegisterPage.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/membership/pageobjects/ResetPassword.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/membership/pageobjects/SignInPage.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/ChangeYourDetailsStep.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/DashboardPageStep.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/LandingPageStep.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/NewRegistrationPageStep.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/RegisterPageStep.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/ResetPasswordStep.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/SignInPageStep.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/membership/pageobjects/BookingFormPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/membership/pageobjects/BookingFormPage.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/BookingFormStep.java" afterPath="$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/BookingFormStep.java" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/hotel_booking_form.feature" afterPath="$PROJECT_DIR$/src/test/resources/hotel_booking_form.feature" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/hotel_booking_form.feature" afterPath="$PROJECT_DIR$/target/test-classes/hotel_booking_form.feature" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/membership/backend/BaseClassRestAssured.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/membership/pageobjects/BookingFormPage.class" afterPath="$PROJECT_DIR$/target/classes/com/membership/pageobjects/BookingFormPage.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/membership/stepdefinitiions/BookingFormStep.class" afterPath="$PROJECT_DIR$/target/classes/com/membership/stepdefinitiions/BookingFormStep.class" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,14 +22,14 @@
       <file leaf-file-name="BasePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/projectresouces/BasePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="855">
+              <caret line="61" column="5" lean-forward="false" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hotel_booking_form.feature" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hotel_booking_form.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/hotel_booking_form.feature">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
@@ -54,31 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RunCukes.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/RunCukes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BookingFormStep.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BookingFormStep.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/BookingFormStep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="42" lean-forward="false" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+            <state relative-caret-position="587">
+              <caret line="45" column="46" lean-forward="false" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,8 +54,8 @@
       <file leaf-file-name="BookingFormPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/BookingFormPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+            <state relative-caret-position="347">
+              <caret line="35" column="7" lean-forward="false" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,6 +89,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/membership/pageobjects/LandingPage.java" />
         <option value="$PROJECT_DIR$/src/test/resources/register_a_new_user.feature" />
         <option value="$PROJECT_DIR$/src/main/java/com/membership/Visitor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/membership/projectresouces/BasePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/BookingFormStep.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/membership/pageobjects/BookingFormPage.java" />
         <option value="$PROJECT_DIR$/src/test/resources/hotel_booking_form.feature" />
@@ -138,10 +104,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1304" />
-    <option name="y" value="25" />
-    <option name="width" value="1880" />
-    <option name="height" value="1010" />
+    <option name="x" value="1280" />
+    <option name="y" value="23" />
+    <option name="width" value="1782" />
+    <option name="height" value="904" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -158,6 +124,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,9 +195,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -415,55 +381,55 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RunCukes - 2018.03.17 at 15h 30m 01s.xml">
-      <configuration name="RunCukes" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="RunCukes - 2018.03.17 at 15h 31m 32s.xml">
-      <configuration name="RunCukes" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="RunCukes - 2018.03.17 at 16h 44m 30s.xml">
-      <configuration name="RunCukes" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="RunCukes - 2018.03.17 at 16h 45m 36s.xml">
-      <configuration name="RunCukes" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="RunCukes - 2018.03.17 at 16h 46m 16s.xml">
-      <configuration name="RunCukes" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="RunCukes - 2018.03.17 at 16h 51m 24s.xml">
-      <configuration name="RunCukes" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="RunCukes - 2018.03.17 at 16h 52m 13s.xml">
-      <configuration name="RunCukes" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="RunCukes - 2018.03.17 at 17h 20m 00s.xml">
+    <history-entry file="RunCukes - 2018.03.18 at 09h 55m 46s.xml">
       <configuration name="RunCukes" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RunCukes - 2018.03.17 at 17h 21m 18s.xml">
+    <history-entry file="RunCukes - 2018.03.18 at 09h 56m 20s.xml">
       <configuration name="RunCukes" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RunCukes - 2018.03.17 at 17h 25m 06s.xml">
+    <history-entry file="RunCukes - 2018.03.18 at 10h 01m 04s.xml">
+      <configuration name="RunCukes" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunCukes - 2018.03.18 at 10h 01m 39s.xml">
+      <configuration name="RunCukes" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunCukes - 2018.03.18 at 10h 33m 35s.xml">
+      <configuration name="RunCukes" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunCukes - 2018.03.18 at 10h 34m 42s.xml">
+      <configuration name="RunCukes" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunCukes - 2018.03.18 at 10h 35m 26s.xml">
+      <configuration name="RunCukes" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunCukes - 2018.03.18 at 10h 37m 03s.xml">
+      <configuration name="RunCukes" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunCukes - 2018.03.18 at 10h 37m 29s.xml">
+      <configuration name="RunCukes" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunCukes - 2018.03.18 at 10h 37m 58s.xml">
       <configuration name="RunCukes" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1304" y="25" width="1880" height="1010" extended-state="0" />
+    <frame x="1280" y="23" width="1782" height="904" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35394457" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49519232" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19893616" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20987654" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -508,38 +474,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/LandingPageStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/NewRegistrationPageStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/LandingPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/NewRegistrationPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="47" lean-forward="false" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/LandingPageStep.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/NewRegistrationPageStep.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/LandingPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/NewRegistrationPage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/resources/hotel_booking_form.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -576,38 +514,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/LandingPageStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/NewRegistrationPageStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/LandingPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/NewRegistrationPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="47" lean-forward="false" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/LandingPageStep.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/NewRegistrationPageStep.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/LandingPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/NewRegistrationPage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/resources/hotel_booking_form.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -644,38 +554,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/LandingPageStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/NewRegistrationPageStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/LandingPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/NewRegistrationPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/LandingPageStep.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/NewRegistrationPageStep.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/LandingPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/NewRegistrationPage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/resources/hotel_booking_form.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -745,28 +627,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/ResetPasswordStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/ResetPasswordStep.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/projectresouces/webDriverSingleton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/DashboardPageStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/DashboardPageStep.java" />
     <entry file="file://$PROJECT_DIR$/src/test/resources/register_a_new_user.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -774,44 +643,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/RegisterPageStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/RegisterPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/NewRegistrationPageStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/NewRegistrationPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="47" lean-forward="false" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/LandingPageStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/RegisterPageStep.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/RegisterPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/NewRegistrationPageStep.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/NewRegistrationPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/LandingPageStep.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/Member.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="777">
@@ -826,46 +662,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/LandingPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/LandingPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/PaymentPage.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="54" />
+        <state relative-caret-position="93">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/PaymentPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/projectresouces/BasePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/BookingFormStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="42" lean-forward="false" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/BookingFormPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -873,15 +676,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/projectresouces/BasePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="61" column="5" lean-forward="false" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/BookingFormPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="347">
+          <caret line="35" column="7" lean-forward="false" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -890,6 +702,16 @@
         <state relative-caret-position="330">
           <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/BookingFormStep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="45" column="46" lean-forward="false" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

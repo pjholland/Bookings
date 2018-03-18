@@ -18,9 +18,9 @@ public class BookingFormPage extends BasePage {
     String checkOutDate = ("checkout");
     String saveButton = ("#form > div > div:nth-child(7) > input[type=\"button\"]");
 
-    public void open() throws InterruptedException {
+    public void open(){
         getDriver().get("http://hotel-test.equalexperts.io/");
-        wait(2);
+      // wait(1);
 
     }
 
@@ -45,6 +45,11 @@ public class BookingFormPage extends BasePage {
 
         WebElement mybutton = getDriver().findElement(By.xpath(("//div[contains(@class, 'row') and contains(., 'Simm')]//input[@type='button'][contains(@value, 'Delete')]")));
         mybutton.click();
+
+    }
+
+    public void bookingIsNotVisible(){
+        getDriver().findElements(By.xpath(("//div[not(contains(@class, 'row') and contains(., 'Simm'))]")));
 
     }
 
