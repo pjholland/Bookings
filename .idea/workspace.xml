@@ -3,12 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2cf197e0-92f5-4690-8dce-d2f1961b9df6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RunCukes.java" afterPath="$PROJECT_DIR$/src/main/java/RunCukes.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/membership/pageobjects/BookingFormPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/membership/pageobjects/BookingFormPage.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/membership/projectresouces/webDriverSingleton.java" afterPath="$PROJECT_DIR$/src/main/java/com/membership/projectresouces/webDriverSingleton.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/BookingFormStep.java" afterPath="$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/BookingFormStep.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/membership/pageobjects/BookingFormPage.class" afterPath="$PROJECT_DIR$/target/classes/com/membership/pageobjects/BookingFormPage.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/membership/projectresouces/webDriverSingleton.class" afterPath="$PROJECT_DIR$/target/classes/com/membership/projectresouces/webDriverSingleton.class" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/hotel_booking_form.feature" afterPath="$PROJECT_DIR$/src/test/resources/hotel_booking_form.feature" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/membership/stepdefinitiions/BookingFormStep.class" afterPath="$PROJECT_DIR$/target/classes/com/membership/stepdefinitiions/BookingFormStep.class" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/hotel_booking_form.feature" afterPath="$PROJECT_DIR$/target/test-classes/hotel_booking_form.feature" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +24,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/projectresouces/BasePage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,8 +35,8 @@
       <file leaf-file-name="hotel_booking_form.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/hotel_booking_form.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            <state relative-caret-position="255">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -45,8 +45,8 @@
       <file leaf-file-name="BookingFormStep.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/BookingFormStep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="59" lean-forward="true" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+            <state relative-caret-position="735">
+              <caret line="49" column="45" lean-forward="true" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,21 +57,11 @@
       <file leaf-file-name="BookingFormPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/BookingFormPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="26" column="51" lean-forward="false" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+            <state relative-caret-position="617">
+              <caret line="65" column="44" lean-forward="true" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webDriverSingleton.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/projectresouces/webDriverSingleton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -101,11 +91,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/membership/pageobjects/LandingPage.java" />
         <option value="$PROJECT_DIR$/src/test/resources/register_a_new_user.feature" />
         <option value="$PROJECT_DIR$/src/main/java/com/membership/Visitor.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/hotel_booking_form.feature" />
-        <option value="$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/BookingFormStep.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/membership/projectresouces/webDriverSingleton.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/membership/projectresouces/BasePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/membership/pageobjects/BookingFormPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/BookingFormStep.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/hotel_booking_form.feature" />
+        <option value="$PROJECT_DIR$/src/main/java/RunCukes.java" />
       </list>
     </option>
   </component>
@@ -137,7 +128,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,8 +213,9 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -408,34 +399,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RunCukes - 2018.03.18 at 15h 59m 48s.xml">
+    <history-entry file="RunCukes - 2018.03.18 at 16h 23m 35s.xml">
       <configuration name="RunCukes" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RunCukes - 2018.03.18 at 16h 01m 00s.xml">
+    <history-entry file="RunCukes - 2018.03.18 at 16h 28m 39s.xml">
       <configuration name="RunCukes" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RunCukes - 2018.03.18 at 16h 01m 57s.xml">
+    <history-entry file="RunCukes - 2018.03.18 at 16h 32m 56s.xml">
       <configuration name="RunCukes" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RunCukes - 2018.03.18 at 16h 02m 46s.xml">
+    <history-entry file="RunCukes - 2018.03.18 at 16h 34m 46s.xml">
       <configuration name="RunCukes" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RunCukes - 2018.03.18 at 16h 18m 15s.xml">
+    <history-entry file="RunCukes - 2018.03.18 at 16h 35m 13s.xml">
       <configuration name="RunCukes" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RunCukes - 2018.03.18 at 16h 18m 56s.xml">
+    <history-entry file="RunCukes - 2018.03.18 at 16h 37m 57s.xml">
       <configuration name="RunCukes" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RunCukes - 2018.03.18 at 16h 19m 21s.xml">
+    <history-entry file="RunCukes - 2018.03.18 at 16h 38m 19s.xml">
       <configuration name="RunCukes" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RunCukes - 2018.03.18 at 16h 19m 42s.xml">
+    <history-entry file="RunCukes - 2018.03.18 at 16h 39m 47s.xml">
       <configuration name="RunCukes" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RunCukes - 2018.03.18 at 16h 20m 33s.xml">
+    <history-entry file="RunCukes - 2018.03.18 at 16h 40m 28s.xml">
       <configuration name="RunCukes" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RunCukes - 2018.03.18 at 16h 20m 56s.xml">
+    <history-entry file="RunCukes - 2018.03.18 at 16h 41m 43s.xml">
       <configuration name="RunCukes" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -457,7 +448,6 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20987654" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -469,6 +459,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -672,20 +663,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/NewRegistrationPageStep.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/NewRegistrationPage.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/LandingPageStep.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/Member.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/Visitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/Member.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/Visitor.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/LandingPage.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/PaymentPage.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -696,26 +675,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RunCukes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/hotel_booking_form.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/projectresouces/webDriverSingleton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -723,17 +686,33 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/projectresouces/BasePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RunCukes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/hotel_booking_form.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/BookingFormStep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="59" lean-forward="true" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+        <state relative-caret-position="735">
+          <caret line="49" column="45" lean-forward="true" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -742,8 +721,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/membership/pageobjects/BookingFormPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="26" column="51" lean-forward="false" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+        <state relative-caret-position="617">
+          <caret line="65" column="44" lean-forward="true" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

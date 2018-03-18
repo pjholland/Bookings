@@ -39,7 +39,7 @@ public class BookingFormPage extends BasePage {
         WebDriverWait wait = new WebDriverWait(getDriver(), 5);
         wait.until(ExpectedConditions.textToBePresentInElement(By.id("bookings"), "Simm"));
 
-        // Find our booing on the form and confirm that the information is correct
+        // Find our booking using a Xpath Query on the form and confirm that the information is correct
         getDriver().findElement(By.xpath(("//div[contains(@class, 'row') and contains(., 'Jon')]")));
         getDriver().findElement(By.xpath(("//div[contains(@class, 'row') and contains(., 'Simm')]")));
         getDriver().findElement(By.xpath(("//div[contains(@class, 'row') and contains(., '99.99')]")));
@@ -49,6 +49,7 @@ public class BookingFormPage extends BasePage {
     }
 
     public void deleteMyBooking(){
+        // Wait for booking to appear and then click the Delete button for that booking
         WebDriverWait wait = new WebDriverWait(getDriver(), 5);
         wait.until(ExpectedConditions.textToBePresentInElement(By.id("bookings"), "Simm"));
         WebElement mybutton = getDriver().findElement(By.xpath(("//div[contains(@class, 'row') and contains(., 'Simm')]//input[@type='button'][contains(@value, 'Delete')]")));
@@ -58,6 +59,12 @@ public class BookingFormPage extends BasePage {
 
     public void bookingIsNotVisible(){
         getDriver().findElements(By.xpath(("//div[not(contains(@class, 'row') and contains(., 'Simm'))]")));
+    }
+
+    public void makeAnIncompleteBooking() throws Exception {
+        type(Locators.id, firstName, "Jon");
+        type(Locators.id, lastName, "Simm");
+        click(Locators.css, saveButton);
     }
 
 }

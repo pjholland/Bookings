@@ -4,6 +4,7 @@ import com.membership.pageobjects.BookingFormPage;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 
 public class BookingFormStep {
 
@@ -34,9 +35,20 @@ public class BookingFormStep {
         bookingFormPage.deleteMyBooking();
     }
 
-    @Then("^the booking will no longer be visible on the fom$")
-    public void the_booking_will_no_longer_be_visible_on_the_fom() throws Throwable {
+    @Then("^the booking will no longer be visible on the form$")
+    public void the_booking_will_no_longer_be_visible_on_the_form() throws Throwable {
         bookingFormPage.bookingIsNotVisible();
     }
+
+    @When("^the visitor attemps to save the booking form without completing all fields$")
+    public void the_visitor_attemps_to_save_the_booking_form_without_completing_all_fields() throws Throwable {
+        bookingFormPage.makeAnIncompleteBooking();
+    }
+
+    @Then("^the booking will not be made$")
+    public void the_booking_will_not_be_made() throws Throwable {
+       bookingFormPage.bookingIsNotVisible();
+    }
+
 
 }
