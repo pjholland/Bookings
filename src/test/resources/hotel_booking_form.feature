@@ -12,7 +12,7 @@ Feature: Hotel Booking Form
            And the visitor makes a booking
            Then their booking will appear on the form
 
-      @current1
+      @current
        Scenario: An on line visitor can delete their booking
            And the visitor decides to delete their booking
            Then the booking will no longer be visible on the fom

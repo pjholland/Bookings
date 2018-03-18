@@ -1,14 +1,9 @@
 package com.membership.stepdefinitiions;
 
 import com.membership.pageobjects.BookingFormPage;
-import com.membership.Visitor;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import org.junit.Assert;
-import org.openqa.selenium.By;
-
-import java.sql.Driver;
 
 public class BookingFormStep {
 
@@ -24,9 +19,7 @@ public class BookingFormStep {
     @And("^the visitor makes a booking$")
     public void the_visitor_makes_a_booking() throws Throwable {
         bookingFormPage.createNewVsitor();
-
     }
-
 
     @Then("^their booking will appear on the form$")
     public void their_booking_will_appear_on_the_form() throws Throwable {
@@ -38,15 +31,11 @@ public class BookingFormStep {
     public void the_visitor_decides_to_delete_their_booking() throws Throwable {
         bookingFormPage.createNewVsitor();
         bookingFormPage.deleteMyBooking();
-
     }
 
     @Then("^the booking will no longer be visible on the fom$")
     public void the_booking_will_no_longer_be_visible_on_the_fom() throws Throwable {
         bookingFormPage.bookingIsNotVisible();
-
-
     }
-
 
 }

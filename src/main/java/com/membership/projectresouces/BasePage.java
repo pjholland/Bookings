@@ -26,18 +26,11 @@ public class BasePage {
         Thread.sleep(seconds * 1000);
     }
 
-    public void wait(double seconds) throws InterruptedException {
-        Thread.sleep(Double.doubleToLongBits(seconds * 1000));
-    }
-
     //a method for waiting until an element is displayed
     protected void waitForElementDisplayed(Locators locator, String element) throws Exception {
         waitForElementDisplayed(getWebElement(locator, element), 5);
     }
 
-    public void waitForElementDisplayed(Locators locator, String element, int seconds) throws Exception {
-        waitForElementDisplayed(getWebElement(locator, element), seconds);
-    }
 
     public void waitForElementDisplayed(WebElement element) throws Exception {
         waitForElementDisplayed(element, 5);
@@ -50,19 +43,6 @@ public class BasePage {
             // If results have been returned, the results are displayed in a drop down.
             if (element.isDisplayed()) break;
         }
-    }
-
-    //////////////////////////////////////
-    //checking element functionality
-    //////////////////////////////////////
-
-    //a method for checking id an element is displayed
-    public void checkElementDisplayed(Locators locator, String element) throws Exception {
-        checkElementDisplayed(getWebElement(locator, element));
-    }
-
-    private void checkElementDisplayed(WebElement element) throws Exception {
-
     }
 
     /////////////////////////////////////
