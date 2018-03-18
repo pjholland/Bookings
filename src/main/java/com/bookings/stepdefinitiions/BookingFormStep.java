@@ -1,6 +1,6 @@
-package com.membership.stepdefinitiions;
+package com.bookings.stepdefinitiions;
 
-import com.membership.pageobjects.BookingFormPage;
+import com.bookings.pageobjects.BookingFormPage;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;

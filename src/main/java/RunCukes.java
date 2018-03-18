@@ -1,4 +1,4 @@
-import com.membership.projectresouces.webDriverSingleton;
+import com.bookings.projectresouces.webDriverSingleton;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import org.junit.AfterClass;

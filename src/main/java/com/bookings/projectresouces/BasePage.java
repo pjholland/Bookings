@@ -1,4 +1,4 @@
-package com.membership.projectresouces;
+package com.bookings.projectresouces;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

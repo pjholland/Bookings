@@ -1,6 +1,6 @@
-package com.membership.pageobjects;
+package com.bookings.pageobjects;
 
-import com.membership.projectresouces.BasePage;
+import com.bookings.projectresouces.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -17,7 +17,9 @@ public class BookingFormPage extends BasePage {
     String saveButton = ("#form > div > div:nth-child(7) > input[type=\"button\"]");
 
     public void open() throws InterruptedException {
+        // Note hard coded URL used here - this would not happen in production code
         getDriver().get("http://hotel-test.equalexperts.io/");
+        
         // When the form loads wait for for the first input elements to become clickable
         WebDriverWait wait = new WebDriverWait(getDriver(), 5);
         wait.until(ExpectedConditions.elementToBeClickable(By.id("firstname")));
