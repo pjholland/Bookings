@@ -40,8 +40,8 @@ public class BookingFormStep {
         bookingFormPage.bookingIsNotVisible();
     }
 
-    @When("^the visitor attemps to save the booking form without completing all fields$")
-    public void the_visitor_attemps_to_save_the_booking_form_without_completing_all_fields() throws Throwable {
+    @When("^the visitor attempts to save the booking form without completing all fields$")
+    public void the_visitor_attempts_to_save_the_booking_form_without_completing_all_fields() throws Throwable {
         bookingFormPage.makeAnIncompleteBooking();
     }
 

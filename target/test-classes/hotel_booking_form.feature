@@ -17,7 +17,7 @@ Feature: Hotel Booking Form
            Then the booking will no longer be visible on the form
 
        Scenario: An online visitor is must fill in all fiels before making a booking
-           When the visitor attemps to save the booking form without completing all fields
+           When the visitor attempts to save the booking form without completing all fields
            Then the booking will not be made
 
 
