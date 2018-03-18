@@ -24,6 +24,7 @@ public class BookingFormStep {
     @Then("^their booking will appear on the form$")
     public void their_booking_will_appear_on_the_form() throws Throwable {
         bookingFormPage.findBooking();
+        // Remove visitor after creation
         bookingFormPage.deleteMyBooking();
     }
 

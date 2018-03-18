@@ -18,29 +18,34 @@ public class BookingFormPage extends BasePage {
 
     public void open() throws InterruptedException {
         getDriver().get("http://hotel-test.equalexperts.io/");
-
+        // When the form loads wait for for the first input elements to become clickable
         WebDriverWait wait = new WebDriverWait(getDriver(), 5);
         wait.until(ExpectedConditions.elementToBeClickable(By.id("firstname")));
 
     }
 
     public void createNewVsitor() throws Exception {
-        wait(2);
         type(Locators.id, firstName, "Jon");
         type(Locators.id, lastName, "Simm");
-        type(Locators.id, totalPrice, "10");
+        type(Locators.id, totalPrice, "99.99");
         selectFromDropDownList(deposit, "false");
-        wait(3);
-        type(Locators.id, checkInDate, "2018-04-01");
-        type(Locators.id, checkOutDate, "2018-04-05");
+        type(Locators.id, checkInDate, "2018-05-01");
+        type(Locators.id, checkOutDate, "2018-05-05");
         click(Locators.css, saveButton);
     }
 
     public void findBooking(){
+        // Wait for the booking information to appear on the form
         WebDriverWait wait = new WebDriverWait(getDriver(), 5);
         wait.until(ExpectedConditions.textToBePresentInElement(By.id("bookings"), "Simm"));
-        getDriver().findElements(By.xpath(("//div[contains(@class, 'row') and contains(., 'Simm')]")));
-        getDriver().findElements(By.xpath(("//div[contains(@class, 'row') and contains(., 'false')]")));
+
+        // Find our booing on the form and confirm that the information is correct
+        getDriver().findElement(By.xpath(("//div[contains(@class, 'row') and contains(., 'Jon')]")));
+        getDriver().findElement(By.xpath(("//div[contains(@class, 'row') and contains(., 'Simm')]")));
+        getDriver().findElement(By.xpath(("//div[contains(@class, 'row') and contains(., '99.99')]")));
+        getDriver().findElement(By.xpath(("//div[contains(@class, 'row') and contains(., 'false')]")));
+        getDriver().findElement(By.xpath(("//div[contains(@class, 'row') and contains(., '2018-05-01')]")));
+        getDriver().findElement(By.xpath(("//div[contains(@class, 'row') and contains(., '2018-05-05')]")));
     }
 
     public void deleteMyBooking(){

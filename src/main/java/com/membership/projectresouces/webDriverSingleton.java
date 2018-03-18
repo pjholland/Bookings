@@ -12,7 +12,7 @@ public class webDriverSingleton {
     public static WebDriver getInstance() {
         if (driver == null) {
             driver = new ChromeDriver();
-            driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         }
 
         return driver;
