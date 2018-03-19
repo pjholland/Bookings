@@ -20,7 +20,7 @@ public class BookingFormPage extends BasePage {
     String checkOutDate = ("checkout");
     String saveButton = ("#form > div > div:nth-child(7) > input[type=\"button\"]");
 
-    public void open() throws InterruptedException {
+    public void open() {
         // Note hard coded URL used here - this would not happen in production code
         getDriver().get("http://hotel-test.equalexperts.io/");
         
