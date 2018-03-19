@@ -51,4 +51,11 @@ public class BookingFormStep {
     }
 
 
+    @Then("^each booking will have a Delete button$")
+    public void each_booking_will_have_a_Delete_button() throws Throwable {
+       bookingFormPage.eachBookingHasADeleteButton();
+    }
+
+
+
 }

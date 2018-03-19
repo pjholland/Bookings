@@ -6,6 +6,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
 public class BookingFormPage extends BasePage {
 
     String firstName = ("firstname");
@@ -23,7 +27,6 @@ public class BookingFormPage extends BasePage {
         // When the form loads wait for for the first input elements to become clickable
         WebDriverWait wait = new WebDriverWait(getDriver(), 5);
         wait.until(ExpectedConditions.elementToBeClickable(By.id("firstname")));
-
     }
 
     public void createNewVsitor() throws Exception {
@@ -56,7 +59,6 @@ public class BookingFormPage extends BasePage {
         wait.until(ExpectedConditions.textToBePresentInElement(By.id("bookings"), "Simm"));
         WebElement mybutton = getDriver().findElement(By.xpath(("//div[contains(@class, 'row') and contains(., 'Simm')]//input[@type='button'][contains(@value, 'Delete')]")));
         mybutton.click();
-
     }
 
     public void bookingIsNotVisible(){
@@ -67,6 +69,20 @@ public class BookingFormPage extends BasePage {
         type(Locators.id, firstName, "Jon");
         type(Locators.id, lastName, "Simm");
         click(Locators.css, saveButton);
+    }
+
+    public void eachBookingHasADeleteButton(){
+        // Get the total number of rows from the form
+        int totalNumberOfRows;
+        totalNumberOfRows = getDriver().findElements(By.xpath("//div[contains(@class, 'row')]")).size();
+        // Do not include the header row and the input row
+        int rowsMinusFirstAndLastRow = totalNumberOfRows - 2;
+        // Get the total number of rows with a Delete button
+        int totalNumberOfRowsWithDeleteButton;
+        totalNumberOfRowsWithDeleteButton  = getDriver().findElements(By.xpath("//input[@type='button'][contains(@value, 'Delete')]")).size();
+
+        // Assert that the two variable are the same and confirm that the test passes
+        assertEquals(rowsMinusFirstAndLastRow,totalNumberOfRowsWithDeleteButton);
     }
 
 }

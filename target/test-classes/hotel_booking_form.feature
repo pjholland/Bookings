@@ -12,6 +12,11 @@ Feature: Hotel Booking Form
            And the visitor makes a booking
            Then their booking will appear on the form
 
+      Scenario: Each booking will have an associatted Delete button
+           And the visitor makes a booking
+           Then their booking will appear on the form
+           And each booking will have a Delete button
+
        Scenario: An on line visitor can delete their booking
            And the visitor decides to delete their booking
            Then the booking will no longer be visible on the form
