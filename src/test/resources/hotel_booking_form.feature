@@ -16,7 +16,7 @@ Feature: Hotel Booking Form
            And the visitor decides to delete their booking
            Then the booking will no longer be visible on the form
 
-       Scenario: An online visitor is must fill in all fiels before making a booking
+       Scenario: An online visitor is must fill in all fields before making a booking
            When the visitor attempts to save the booking form without completing all fields
            Then the booking will not be made
 
