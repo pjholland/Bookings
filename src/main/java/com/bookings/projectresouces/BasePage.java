@@ -19,6 +19,34 @@ public class BasePage {
 
     }
 
+    ///////////////////////////////////////////
+    // WebDriver Standard Functionality
+    //////////////////////////////////////////
+
+    public void navigateTo(String url){
+        getDriver().navigate().to(url);
+    }
+
+    public void navigateBack(){
+        getDriver().navigate().back();
+    }
+
+    public void navigateforward(){
+        getDriver().navigate().forward();
+    }
+
+    public void confirmPageTitle(String title){
+        assertTrue(getDriver().getTitle().contains(title));
+    }
+
+    public void switchToFrame(String frameId){
+        getDriver().switchTo().frame(frameId);
+    }
+
+    public void switchToDefaultContent(){
+        getDriver().switchTo().defaultContent();
+    }
+
     /////////////////////////////////////////
     //waiting functionality
     /////////////////////////////////////////
@@ -87,6 +115,24 @@ public class BasePage {
         assertTrue(actualString.contains(elementText));
 
     }
+
+    // Methods to enable and disable check box
+    public void enableCheckBox(Locators locator, String element) throws Exception {
+
+        if ( !getDriver().findElement((By) getWebElement(locator, element )).isSelected() )
+        {
+             getDriver().findElement((By) getWebElement(locator, element )).click();
+        }
+    }
+
+    public void disableCheckBox(Locators locator, String element) throws Exception {
+
+        if ( getDriver().findElement((By) getWebElement(locator, element )).isSelected() )
+        {
+            getDriver().findElement((By) getWebElement(locator, element )).click();
+        }
+    }
+
 
     /////////////////////////////////////
     //Other Generic Tests
