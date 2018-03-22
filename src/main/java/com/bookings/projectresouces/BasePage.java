@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
+import static org.junit.Assert.assertTrue;
+
 public class BasePage {
 
     public enum Locators {
@@ -77,6 +79,13 @@ public class BasePage {
     protected void selectFromDropDownList(String dropDownId, String dropDownRowName) {
         Select dropdown = new Select(getDriver().findElement(By.id(dropDownId)));
         dropdown.selectByVisibleText(dropDownRowName);
+    }
+
+    // Method to confirm that element has text Note find element was cast to By
+    public void elementHasText(Locators locator, String element, String elementText) throws Exception {
+        String actualString = getDriver().findElement((By) getWebElement(locator, element )).getText();
+        assertTrue(actualString.contains(elementText));
+
     }
 
     /////////////////////////////////////

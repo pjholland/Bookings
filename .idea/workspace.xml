@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cf197e0-92f5-4690-8dce-d2f1961b9df6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bookings/pageobjects/BookingFormPage.class" afterPath="$PROJECT_DIR$/target/classes/com/bookings/pageobjects/BookingFormPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bookings/projectresouces/BasePage$1.class" afterPath="$PROJECT_DIR$/target/classes/com/bookings/projectresouces/BasePage$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bookings/projectresouces/BasePage.class" afterPath="$PROJECT_DIR$/target/classes/com/bookings/projectresouces/BasePage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bookings/projectresouces/webDriverSingleton.class" afterPath="$PROJECT_DIR$/target/classes/com/bookings/projectresouces/webDriverSingleton.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/RunCukes.java" afterPath="$PROJECT_DIR$/src/main/java/RunCukes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bookings/pageobjects/BookingFormPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/bookings/pageobjects/BookingFormPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bookings/projectresouces/BasePage.java" afterPath="$PROJECT_DIR$/src/main/java/com/bookings/projectresouces/BasePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bookings/projectresouces/webDriverSingleton.java" afterPath="$PROJECT_DIR$/src/main/java/com/bookings/projectresouces/webDriverSingleton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/hotel_booking_form.feature" afterPath="$PROJECT_DIR$/src/test/resources/hotel_booking_form.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotel_booking_form.feature" afterPath="$PROJECT_DIR$/target/test-classes/hotel_booking_form.feature" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +15,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="hotel_booking_form.feature" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hotel_booking_form.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/hotel_booking_form.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            <state relative-caret-position="306">
+              <caret line="20" column="58" lean-forward="true" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -49,8 +38,8 @@
       <file leaf-file-name="BookingFormPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bookings/pageobjects/BookingFormPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="59" />
+            <state relative-caret-position="198">
+              <caret line="70" column="40" lean-forward="true" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -66,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasePage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BasePage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bookings/projectresouces/BasePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="90" column="41" lean-forward="true" selection-start-line="90" selection-start-column="41" selection-end-line="90" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,11 +97,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/membership/pageobjects/BookingFormPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/membership/stepdefinitiions/BookingFormStep.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bookings/projectresouces/webDriverSingleton.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bookings/pageobjects/BookingFormPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bookings/projectresouces/BasePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/RunCukes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bookings/stepdefinitiions/BookingFormStep.java" />
         <option value="$PROJECT_DIR$/src/test/resources/hotel_booking_form.feature" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bookings/pageobjects/BookingFormPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bookings/projectresouces/BasePage.java" />
       </list>
     </option>
   </component>
@@ -618,12 +607,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RunCukes - 2018.03.22 at 13h 26m 25s.xml">
-      <configuration name="RunCukes" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RunCukes - 2018.03.22 at 13h 27m 31s.xml">
-      <configuration name="RunCukes" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RunCukes - 2018.03.22 at 13h 28m 08s.xml">
       <configuration name="RunCukes" configurationId="JUnit" />
     </history-entry>
@@ -646,6 +629,12 @@
       <configuration name="RunCukes" configurationId="JUnit" />
     </history-entry>
     <history-entry file="RunCukes - 2018.03.22 at 13h 34m 30s.xml">
+      <configuration name="RunCukes" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunCukes - 2018.03.22 at 13h 41m 58s.xml">
+      <configuration name="RunCukes" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunCukes - 2018.03.22 at 14h 41m 35s.xml">
       <configuration name="RunCukes" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -863,18 +852,24 @@
         <state relative-caret-position="18">
           <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bookings/projectresouces/BasePage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/hotel_booking_form.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="20" column="58" lean-forward="true" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bookings/stepdefinitiions/BookingFormStep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -888,25 +883,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bookings/pageobjects/BookingFormPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="59" />
+        <state relative-caret-position="198">
+          <caret line="70" column="40" lean-forward="true" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bookings/stepdefinitiions/BookingFormStep.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bookings/projectresouces/BasePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/hotel_booking_form.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="360">
+          <caret line="90" column="41" lean-forward="true" selection-start-line="90" selection-start-column="41" selection-end-line="90" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
