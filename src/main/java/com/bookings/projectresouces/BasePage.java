@@ -21,16 +21,15 @@ public class BasePage {
     //waiting functionality
     /////////////////////////////////////////
 
-    //a method for allowing selenium to pause for a set amount of time
+    //a method for allowing selenium to pause for a set amount of time - used primarily for debugging
     protected void wait(int seconds) throws InterruptedException {
         Thread.sleep(seconds * 1000);
     }
 
-    //a method for waiting until an element is displayed
-    protected void waitForElementDisplayed(Locators locator, String element) throws Exception {
-        waitForElementDisplayed(getWebElement(locator, element), 5);
+    //methods for waiting until an element is displayed
+    protected void waitForElementDisplayed(Locators locator, String element, int seconds) throws Exception {
+        waitForElementDisplayed(getWebElement(locator, element), seconds);
     }
-
 
     public void waitForElementDisplayed(WebElement element) throws Exception {
         waitForElementDisplayed(element, 5);
@@ -40,7 +39,6 @@ public class BasePage {
         //wait for up to XX seconds for our error message
         long end = System.currentTimeMillis() + (seconds * 1000);
         while (System.currentTimeMillis() < end) {
-            // If results have been returned, the results are displayed in a drop down.
             if (element.isDisplayed()) break;
         }
     }
@@ -59,11 +57,7 @@ public class BasePage {
         selAction.click(element).perform();
     }
 
-    //a method to simulate the mouse hovering over an element
-    public void hover(Locators locator, String element) throws Exception {
-        hover(getWebElement(locator, element));
-    }
-
+    //method to simulate the mouse hovering over an element
     private void hover(WebElement element) throws Exception {
         Actions selAction = new Actions(getDriver());
         selAction.moveToElement(element).perform();
@@ -85,11 +79,11 @@ public class BasePage {
         dropdown.selectByVisibleText(dropDownRowName);
     }
 
-
     /////////////////////////////////////
     //Other Generic Tests
     ////////////////////////////////////
 
+    // Method to check text is visible on the page - has limitations as it looks at the page source
     @SuppressWarnings("ResultOfMethodCallIgnored")
     public void checkTextPresentOnPage(String text) {
         getDriver().getPageSource().compareTo(text);
@@ -100,7 +94,7 @@ public class BasePage {
     //extra base selenium functionality
     ////////////////////////////////////
 
-    //a method to grab the web element using selenium webdriver
+    //a method to grab the web element using selenium WebDriver
     private WebElement getWebElement(Locators locator, String element) throws Exception {
         By byElement;
         switch (locator) {        //determine which locator item we are interested in

@@ -80,7 +80,6 @@ public class BookingFormPage extends BasePage {
         // Get the total number of rows with a Delete button
         int totalNumberOfRowsWithDeleteButton;
         totalNumberOfRowsWithDeleteButton  = getDriver().findElements(By.xpath("//input[@type='button'][contains(@value, 'Delete')]")).size();
-
         // Assert that the two variable are the same and confirm that the test passes
         assertEquals(rowsMinusFirstAndLastRow,totalNumberOfRowsWithDeleteButton);
     }
