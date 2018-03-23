@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import java.util.List;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -82,6 +84,21 @@ public class BookingFormPage extends BasePage {
         totalNumberOfRowsWithDeleteButton  = getDriver().findElements(By.xpath("//input[@type='button'][contains(@value, 'Delete')]")).size();
         // Assert that the two variable are the same and confirm that the test passes
         assertEquals(rowsMinusFirstAndLastRow,totalNumberOfRowsWithDeleteButton);
+    }
+
+    public void deleteAllBookings() throws InterruptedException {
+        // Need sleeps here to allow for stale element reference
+        wait(2);
+        List<WebElement> deleteButtons = getDriver().findElements(By.xpath("//*[@value=\"Delete\"]"));
+
+        for(int i = 0; i < deleteButtons.size(); ++i) {
+            wait(2);
+            WebElement buttons = deleteButtons.get(i).findElement(By.xpath("//*[@value=\"Delete\"]"));
+            wait(2);
+            buttons.click();
+        }
+
+
     }
 
 }
