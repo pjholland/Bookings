@@ -1,6 +1,7 @@
 package com.bookings.stepdefinitiions;
 
 import com.bookings.pageobjects.BookingFormPage;
+import com.bookings.projectresouces.BasePage;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;

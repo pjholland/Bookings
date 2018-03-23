@@ -23,27 +23,27 @@ public class BasePage {
     // WebDriver Standard Functionality
     //////////////////////////////////////////
 
-    public void navigateTo(String url){
+    public void navigateTo(String url) {
         getDriver().navigate().to(url);
     }
 
-    public void navigateBack(){
+    public void navigateBack() {
         getDriver().navigate().back();
     }
 
-    public void navigateforward(){
+    public void navigateforward() {
         getDriver().navigate().forward();
     }
 
-    public void confirmPageTitle(String title){
+    public void confirmPageTitle(String title) {
         assertTrue(getDriver().getTitle().contains(title));
     }
 
-    public void switchToFrame(String frameId){
+    public void switchToFrame(String frameId) {
         getDriver().switchTo().frame(frameId);
     }
 
-    public void switchToDefaultContent(){
+    public void switchToDefaultContent() {
         getDriver().switchTo().defaultContent();
     }
 
@@ -77,59 +77,64 @@ public class BasePage {
     //selenium actions functionality
     /////////////////////////////////////
 
-    //our generic selenium click functionality implemented
+    //our generic selenium click functionality implemented - this method uses our custom process
     protected void click(Locators locator, String element) throws Exception {
         click(getWebElement(locator, element));
     }
 
+    // This method uses the traditional WebElement class
     private void click(WebElement element) {
         Actions selAction = new Actions(getDriver());
         selAction.click(element).perform();
     }
 
-    //method to simulate the mouse hovering over an element
+    //method to simulate the mouse hovering over an element - uses the tradtional WebElement class
     private void hover(WebElement element) throws Exception {
         Actions selAction = new Actions(getDriver());
         selAction.moveToElement(element).perform();
     }
 
-    //our generic selenium type functionality
+    //our generic selenium type functionality - uses our Base Class getWebElement method
     protected void type(Locators locator, String element, String text) throws Exception {
         type(getWebElement(locator, element), text);
     }
 
+    //  uses our Base Class getWebElement method
     private void type(WebElement element, String text) {
         Actions selAction = new Actions(getDriver());
         selAction.sendKeys(element, text).perform();
     }
 
-    // if this method is used then the element type in the page object be should String and not WebDriver By
+    // if this method is used then the element type in the page object be should String and not WebDriver By - hybrid - needs refactoring
     protected void selectFromDropDownList(String dropDownId, String dropDownRowName) {
         Select dropdown = new Select(getDriver().findElement(By.id(dropDownId)));
         dropdown.selectByVisibleText(dropDownRowName);
     }
 
-    // Method to confirm that element has text Note find element was cast to By
+    // Method to confirm that element has text - uses our Base Class getWebElement process
     public void elementHasText(Locators locator, String element, String elementText) throws Exception {
-        String actualString = getDriver().findElement((By) getWebElement(locator, element )).getText();
+        String actualString = getWebElement(locator, element).getText();
         assertTrue(actualString.contains(elementText));
-
     }
 
-    // Methods to enable and disable check box
+    //  uses our Base Class getWebElement process
+    public void getElementText(Locators locator, String element) throws Exception {
+        String actualString = getWebElement(locator, element).getText();
+        System.out.print(actualString);
+    }
+
+    // Methods to enable and disable check box - cannot fully utilise our Base class due to the boolean operator
     public void enableCheckBox(Locators locator, String element) throws Exception {
 
-        if ( !getDriver().findElement((By) getWebElement(locator, element )).isSelected() )
-        {
-             getDriver().findElement((By) getWebElement(locator, element )).click();
+        if (!getDriver().findElement((By) getWebElement(locator, element)).isSelected()) {
+            getDriver().findElement((By) getWebElement(locator, element)).click();
         }
     }
 
     public void disableCheckBox(Locators locator, String element) throws Exception {
 
-        if ( getDriver().findElement((By) getWebElement(locator, element )).isSelected() )
-        {
-            getDriver().findElement((By) getWebElement(locator, element )).click();
+        if (getDriver().findElement((By) getWebElement(locator, element)).isSelected()) {
+            getDriver().findElement((By) getWebElement(locator, element)).click();
         }
     }
 
