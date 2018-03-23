@@ -1,5 +1,6 @@
 package com.bookings.pageobjects;
 
+import com.bookings.Visitor;
 import com.bookings.projectresouces.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -100,5 +101,22 @@ public class BookingFormPage extends BasePage {
 
 
     }
+
+    // Not implemented yet - needs more work
+    public void createVisitorWithUniqueName() throws Exception {
+
+        Visitor visitor = new Visitor();
+
+        type(Locators.id, firstName, visitor.getFirstName());
+        type(Locators.id, lastName, visitor.getLastName());
+        type(Locators.id, totalPrice, "99.99");
+        selectFromDropDownList(deposit, "false");
+        type(Locators.id, checkInDate, "2018-05-01");
+        type(Locators.id, checkOutDate, "2018-05-05");
+        click(Locators.css, saveButton);
+    }
+
+
+
 
 }
