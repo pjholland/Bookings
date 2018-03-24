@@ -11,11 +11,12 @@ public class BookingFormStep {
 
     private BookingFormPage bookingFormPage;
 
-
     @Given("^the visitor is on the hotel booking form page$")
     public void the_visitor_is_on_the_hotel_booking_form_page() throws Throwable {
         bookingFormPage = new BookingFormPage();
         bookingFormPage.open();
+        // Create deault booking if no bookings exist
+        bookingFormPage.createDefaultBooking();
     }
 
     @And("^the visitor makes a booking$")

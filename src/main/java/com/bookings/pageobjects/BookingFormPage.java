@@ -98,8 +98,6 @@ public class BookingFormPage extends BasePage {
             wait(2);
             buttons.click();
         }
-
-
     }
 
     // Not implemented yet - needs more work
@@ -116,7 +114,29 @@ public class BookingFormPage extends BasePage {
         click(Locators.css, saveButton);
     }
 
+    public void createDefaultBooking() throws Exception {
+        // if no bookings exist then create a deault booking
+        int currentBookings = getDriver().findElements(By.xpath("//input[@type='button'][contains(@value, 'Delete')]")).size();
 
-
-
+        if (currentBookings < 1) {
+            type(Locators.id, firstName, "Mary");
+            type(Locators.id, lastName, "Jones");
+            type(Locators.id, totalPrice, "99.99");
+            selectFromDropDownList(deposit, "false");
+            type(Locators.id, checkInDate, "2018-05-01");
+            type(Locators.id, checkOutDate, "2018-05-05");
+            click(Locators.css, saveButton);
+            // Wait for the default booking information to appear on the form
+            WebDriverWait wait = new WebDriverWait(getDriver(), 5);
+            wait.until(ExpectedConditions.textToBePresentInElement(By.id("bookings"), "Jones"));
+        }else {
+            if (currentBookings ==1)
+                System.out.print("A default booking exists...... ");
+        }
+    }
 }
+
+
+
+
+
