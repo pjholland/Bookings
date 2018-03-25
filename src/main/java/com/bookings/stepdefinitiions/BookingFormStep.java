@@ -22,6 +22,8 @@ public class BookingFormStep {
     @And("^the visitor makes a booking$")
     public void the_visitor_makes_a_booking() throws Throwable {
         bookingFormPage.createNewVsitor();
+            // Method below allows us to create a unique user
+        // bookingFormPage.createVisitorWithUniqueName();
     }
 
     @Then("^their booking will appear on the form$")
@@ -56,7 +58,5 @@ public class BookingFormStep {
     public void each_booking_will_have_a_Delete_button() throws Throwable {
        bookingFormPage.eachBookingHasADeleteButton();
     }
-
-
 
 }
