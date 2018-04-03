@@ -6,9 +6,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import java.util.List;
-import static org.junit.Assert.assertEquals;
 
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class BookingFormPage extends BasePage {
 
@@ -61,17 +64,6 @@ public class BookingFormPage extends BasePage {
         mybutton.click();
     }
 
-    public void deleteUniqueBooking(){
-        // need to get the unique visitor last name to enable us to delete it
-        // Note - need to find a way to interpolate the unique visitor
-        String uniqueVisitorLastName = Visitor.createTestVsitor().getLastName();
-        WebDriverWait wait = new WebDriverWait(getDriver(), 5);
-        wait.until(ExpectedConditions.textToBePresentInElement(By.id("bookings"), Visitor.createTestVsitor().getLastName()));
-        WebElement mybutton = getDriver().findElement(By.xpath(("//div[contains(@class, 'row') and contains(., 'Simm')]//input[@type='button'][contains(@value, 'Delete')]")));
-        mybutton.click();
-
-    }
-
     public void bookingIsNotVisible(){
         getDriver().findElements(By.xpath(("//div[not(contains(@class, 'row') and contains(., 'Simm'))]")));
     }
@@ -108,9 +100,10 @@ public class BookingFormPage extends BasePage {
         }
     }
 
+    // Not implemented yet - needs more work
     public void createVisitorWithUniqueName() throws Exception {
 
-        Visitor visitor  = Visitor.createTestVsitor();
+        Visitor visitor = new Visitor();
 
         type(Locators.id, firstName, visitor.getFirstName());
         type(Locators.id, lastName, visitor.getLastName());
