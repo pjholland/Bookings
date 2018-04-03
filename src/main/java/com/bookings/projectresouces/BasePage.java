@@ -32,7 +32,7 @@ public class BasePage {
         getDriver().navigate().back();
     }
 
-    public void navigateforward() {
+    public void navigateForward() {
         getDriver().navigate().forward();
     }
 
@@ -50,10 +50,8 @@ public class BasePage {
 
     public void determinePageTitle(String pageTitle){
 
-        String actualtitle = getDriver().getTitle();
-
-        assertEquals(actualtitle, pageTitle);
-
+        String actualTitle = getDriver().getTitle();
+        assertEquals(actualTitle, pageTitle);
     }
 
     /////////////////////////////////////////

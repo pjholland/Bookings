@@ -15,15 +15,13 @@ public class BookingFormStep {
     public void the_visitor_is_on_the_hotel_booking_form_page() throws Throwable {
         bookingFormPage = new BookingFormPage();
         bookingFormPage.open();
-        // Create deault booking if no bookings exist
+        // Create default booking if no bookings exist
         bookingFormPage.createDefaultBooking();
     }
 
     @And("^the visitor makes a booking$")
     public void the_visitor_makes_a_booking() throws Throwable {
-        bookingFormPage.createNewVsitor();
-            // Method below allows us to create a unique user
-        // bookingFormPage.createVisitorWithUniqueName();
+         bookingFormPage.createNewVsitor();
     }
 
     @Then("^their booking will appear on the form$")

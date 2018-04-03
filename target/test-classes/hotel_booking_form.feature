@@ -3,7 +3,7 @@ Feature: Hotel Booking Form
 
         In order to maintain an on-line booking service
         I want a Booking Form web page
-        So that visitors can book thier accomdation on line
+        So that visitors can book their accommodation on line
 
       Background:
           Given the visitor is on the hotel booking form page

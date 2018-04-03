@@ -61,15 +61,15 @@ public class BookingFormPage extends BasePage {
         mybutton.click();
     }
 
-    public void deleteUniqueBooking(){
-        // need to get the unique visitor last name to enable us to delete it
-        // Note - need to find a way to interpolate the unique visitor
+    public void deleteUniqueBooking() {
+        // Get last name from the visitor class
         String uniqueVisitorLastName = Visitor.createTestVsitor().getLastName();
+        // This string interpolates the last name into the xpath string and allows the deletion of the unique visitor
+        String xpathString = String.format("//div[contains(@class, 'row') and contains(., %s)]//input[@type='button'][contains(@value, 'Delete')]", uniqueVisitorLastName);
         WebDriverWait wait = new WebDriverWait(getDriver(), 5);
         wait.until(ExpectedConditions.textToBePresentInElement(By.id("bookings"), Visitor.createTestVsitor().getLastName()));
-        WebElement mybutton = getDriver().findElement(By.xpath(("//div[contains(@class, 'row') and contains(., 'Simm')]//input[@type='button'][contains(@value, 'Delete')]")));
+        WebElement mybutton = getDriver().findElement(By.xpath(xpathString));
         mybutton.click();
-
     }
 
     public void bookingIsNotVisible(){
@@ -122,7 +122,7 @@ public class BookingFormPage extends BasePage {
     }
 
     public void createDefaultBooking() throws Exception {
-        // if no bookings exist then create a deault booking
+        // if no bookings exist then create a default booking
         int currentBookings = getDriver().findElements(By.xpath("//input[@type='button'][contains(@value, 'Delete')]")).size();
 
         if (currentBookings < 1) {
