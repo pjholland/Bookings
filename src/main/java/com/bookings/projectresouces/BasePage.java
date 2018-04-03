@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class BasePage {
@@ -45,6 +46,14 @@ public class BasePage {
 
     public void switchToDefaultContent() {
         getDriver().switchTo().defaultContent();
+    }
+
+    public void determinePageTitle(String pageTitle){
+
+        String actualtitle = getDriver().getTitle();
+
+        assertEquals(actualtitle, pageTitle);
+
     }
 
     /////////////////////////////////////////
