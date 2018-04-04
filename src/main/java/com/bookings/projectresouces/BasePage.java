@@ -16,8 +16,18 @@ public class BasePage {
     }
 
     protected WebDriver getDriver() {
-        return webDriverSingleton.getInstance();
 
+        // Run the required browser dependent on the status of the environment variable
+        String  a = String.valueOf(System.getenv("ENV1"));
+
+        if (a.equals("chrome_driver"))
+        {
+            return webDriverSingleton.getInstance(webDriverSingleton.Browsers.chrome);
+        }
+        else
+            {
+            return webDriverSingleton.getInstance(webDriverSingleton.Browsers.firefox);
+        }
     }
 
     ///////////////////////////////////////////

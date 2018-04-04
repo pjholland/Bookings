@@ -15,6 +15,7 @@ import org.junit.runner.RunWith;
 public class RunCukes {
     @AfterClass
     public static void tearDown() {
-        webDriverSingleton.getInstance().quit();
+
+        webDriverSingleton.getInstance(webDriverSingleton.Browsers.chrome).quit();
     }
 }

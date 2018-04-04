@@ -136,9 +136,6 @@ public class BookingFormPage extends BasePage {
             // Wait for the default booking information to appear on the form
             WebDriverWait wait = new WebDriverWait(getDriver(), 5);
             wait.until(ExpectedConditions.textToBePresentInElement(By.id("bookings"), "Jones"));
-        }else {
-            if (currentBookings ==1)
-                System.out.print("A default booking exists...... ");
         }
     }
 }
