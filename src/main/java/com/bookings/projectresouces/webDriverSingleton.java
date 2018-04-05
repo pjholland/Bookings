@@ -14,21 +14,6 @@ public class webDriverSingleton {
 
     private static WebDriver driver;
 
-//    public static WebDriver getInstance() {
-//        if (driver == null) {
-//            //System.setProperty("webdriver.gecko.driver", "/usr/local/share/geckodriver");
-//           // driver = new FirefoxDriver();
-//            driver = new ChromeDriver();
-//            Dimension d = new Dimension(1600,1200);
-//            //Resize current window to the set dimension
-//            driver.manage().window().setSize(d);
-//            driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-//        }
-//
-//        return driver;
-//}
-
-
     public static WebDriver getInstance(Browsers browsers) {
         if (driver == null) {
             switch (browsers) {

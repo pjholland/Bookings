@@ -1,11 +1,10 @@
 package com.bookings.projectresouces;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-
+import java.io.File;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -34,6 +33,11 @@ public class BasePage {
     // WebDriver Standard Functionality
     //////////////////////////////////////////
 
+    public void takeScreenshot() throws Exception {
+        File scrFile = ((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(scrFile, new File("src/main/screenShots/failed-test.png"));
+    }
+    
     public void navigateTo(String url) {
         getDriver().navigate().to(url);
     }
@@ -69,7 +73,8 @@ public class BasePage {
     /////////////////////////////////////////
 
     //a method for allowing selenium to pause for a set amount of time - used primarily for debugging
-    protected void wait(int seconds) throws InterruptedException {
+    protected void waitForExecution() throws InterruptedException {
+        int seconds = 0;
         Thread.sleep(seconds * 1000);
     }
 
@@ -155,7 +160,6 @@ public class BasePage {
         }
     }
 
-
     /////////////////////////////////////
     //Other Generic Tests
     ////////////////////////////////////
@@ -214,6 +218,4 @@ public class BasePage {
         return getDriver().findElement(byElement);    //return our query
 
     }
-
-
 }

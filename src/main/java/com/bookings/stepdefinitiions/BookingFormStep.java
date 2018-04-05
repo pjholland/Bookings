@@ -1,7 +1,6 @@
 package com.bookings.stepdefinitiions;
 
 import com.bookings.pageobjects.BookingFormPage;
-import com.bookings.projectresouces.BasePage;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -21,20 +20,19 @@ public class BookingFormStep {
 
     @And("^the visitor makes a booking$")
     public void the_visitor_makes_a_booking() throws Throwable {
-         bookingFormPage.createNewVsitor();
+         bookingFormPage.createVisitorWithUniqueName();
     }
 
     @Then("^their booking will appear on the form$")
     public void their_booking_will_appear_on_the_form() throws Throwable {
-        bookingFormPage.findBooking();
-        // Remove visitor after creation
-        bookingFormPage.deleteMyBooking();
+        bookingFormPage.findUniqueBooking();
+        bookingFormPage.deleteUniqueBooking();
     }
 
     @Given("^the visitor decides to delete their booking$")
     public void the_visitor_decides_to_delete_their_booking() throws Throwable {
-        bookingFormPage.createNewVsitor();
-        bookingFormPage.deleteMyBooking();
+        bookingFormPage.createVisitorWithUniqueName();
+        bookingFormPage.deleteUniqueBooking();
     }
 
     @Then("^the booking will no longer be visible on the form$")

@@ -27,8 +27,6 @@ public class Visitor {
          return visitor;
      }
 
-
-
         public  String getFirstName() {
             return firstName;
         }
@@ -37,9 +35,7 @@ public class Visitor {
             this.firstName = firstName;
         }
 
-        public String getLastName() {
-            return lastName;
-        }
+        public String getLastName() {return lastName;}
 
         public void setLastName(String lastName) {
             this.lastName = lastName;
