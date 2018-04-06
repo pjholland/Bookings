@@ -1,0 +1,38 @@
+[
+  {
+    "source": "^the visitor is on the hotel booking form page$",
+    "steps": [
+      {
+        "name": "the visitor is on the hotel booking form page",
+        "aggregatedDurations": {
+          "average": 4.527459394,
+          "median": 4.527459394
+        },
+        "durations": [
+          {
+            "duration": 4.527459394,
+            "location": "hotel_booking_form.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the visitor makes a booking$",
+    "steps": [
+      {
+        "name": "the visitor makes a booking",
+        "aggregatedDurations": {
+          "average": 1.597293765,
+          "median": 1.597293765
+        },
+        "durations": [
+          {
+            "duration": 1.597293765,
+            "location": "hotel_booking_form.feature:12"
+          }
+        ]
+      }
+    ]
+  }
+]

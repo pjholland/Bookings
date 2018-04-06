@@ -1,10 +1,11 @@
 package com.bookings.projectresouces;
 
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-import java.io.File;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -27,17 +28,12 @@ public class BasePage {
             {
             return webDriverSingleton.getInstance(webDriverSingleton.Browsers.firefox);
         }
-    }
+   }
 
     ///////////////////////////////////////////
     // WebDriver Standard Functionality
     //////////////////////////////////////////
 
-    public void takeScreenshot() throws Exception {
-        File scrFile = ((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(scrFile, new File("src/main/screenShots/failed-test.png"));
-    }
-    
     public void navigateTo(String url) {
         getDriver().navigate().to(url);
     }
