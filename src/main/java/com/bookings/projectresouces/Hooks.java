@@ -12,15 +12,10 @@ import java.io.InputStreamReader;
 
 public class Hooks extends BasePage {
 
-   @After
-    public void tearDown(){
-        getDriver().quit();
-    }
 
     // Takes screen shot for a scenario or feature - enter tag into brackets e.g. @current
     // @After ()
     public static void embedScreenshot(Scenario scenario) {
-        scenario.write("We are here");
         if (scenario.isFailed()) {
             try {
                 byte[] screenshot = ((TakesScreenshot)webDriverSingleton.getInstance(webDriverSingleton.Browsers.chrome)).getScreenshotAs(OutputType.BYTES);
@@ -45,14 +40,14 @@ public class Hooks extends BasePage {
 
             result.embed(screenshot, "image/png");
         }
-        //stop the browser session
+        //stop the browser session - at failure point
        // webDriverSingleton.getInstance(webDriverSingleton.Browsers.chrome).quit();
     }
 
+    // Not tested
     @After("@leave_window_open")
     public void leave_window_open(Scenario scenario) {
         if (scenario.isFailed()) {
-
             System.out.println("Step failed. Press ENTER to close browser...");
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             try {

@@ -16,11 +16,9 @@ public class RunCukes {
 
     @AfterClass
     public static void tearDown(){
-        webDriverSingleton.getInstance(webDriverSingleton.Browsers.chrome).close();
-
+        webDriverSingleton.getInstance(webDriverSingleton.Browsers.chrome).quit();
         webDriverSingleton.getInstance(webDriverSingleton.Browsers.chrome).quit();
     }
-
 }
 
 
