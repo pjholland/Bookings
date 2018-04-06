@@ -1,1 +1,166 @@
-[]
+[
+  {
+    "source": "^each booking will have a Delete button$",
+    "steps": [
+      {
+        "name": "each booking will have a Delete button",
+        "aggregatedDurations": {
+          "average": 0.112075273,
+          "median": 0.112075273
+        },
+        "durations": [
+          {
+            "duration": 0.112075273,
+            "location": "hotel_booking_form.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the visitor decides to delete their booking$",
+    "steps": [
+      {
+        "name": "the visitor decides to delete their booking",
+        "aggregatedDurations": {
+          "average": 4.851412676,
+          "median": 4.851412676
+        },
+        "durations": [
+          {
+            "duration": 4.851412676,
+            "location": "hotel_booking_form.feature:21"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the visitor attempts to save the booking form without completing all fields$",
+    "steps": [
+      {
+        "name": "the visitor attempts to save the booking form without completing all fields",
+        "aggregatedDurations": {
+          "average": 0.892787695,
+          "median": 0.892787695
+        },
+        "durations": [
+          {
+            "duration": 0.892787695,
+            "location": "hotel_booking_form.feature:25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the booking will no longer be visible on the form$",
+    "steps": [
+      {
+        "name": "the booking will no longer be visible on the form",
+        "aggregatedDurations": {
+          "average": 0.074834503,
+          "median": 0.074834503
+        },
+        "durations": [
+          {
+            "duration": 0.074834503,
+            "location": "hotel_booking_form.feature:22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^their booking will appear on the form$",
+    "steps": [
+      {
+        "name": "their booking will appear on the form",
+        "aggregatedDurations": {
+          "average": 3.092431841,
+          "median": 3.092431841
+        },
+        "durations": [
+          {
+            "duration": 3.471335183,
+            "location": "hotel_booking_form.feature:13"
+          },
+          {
+            "duration": 2.713528499,
+            "location": "hotel_booking_form.feature:18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the booking will not be made$",
+    "steps": [
+      {
+        "name": "the booking will not be made",
+        "aggregatedDurations": {
+          "average": 0.020292724,
+          "median": 0.020292724
+        },
+        "durations": [
+          {
+            "duration": 0.020292724,
+            "location": "hotel_booking_form.feature:26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the visitor is on the hotel booking form page$",
+    "steps": [
+      {
+        "name": "the visitor is on the hotel booking form page",
+        "aggregatedDurations": {
+          "average": 1.086913427,
+          "median": 0.399131862
+        },
+        "durations": [
+          {
+            "duration": 3.201100195,
+            "location": "hotel_booking_form.feature:9"
+          },
+          {
+            "duration": 0.367826319,
+            "location": "hotel_booking_form.feature:9"
+          },
+          {
+            "duration": 0.348289791,
+            "location": "hotel_booking_form.feature:9"
+          },
+          {
+            "duration": 0.430437405,
+            "location": "hotel_booking_form.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the visitor makes a booking$",
+    "steps": [
+      {
+        "name": "the visitor makes a booking",
+        "aggregatedDurations": {
+          "average": 1.732829735,
+          "median": 1.732829735
+        },
+        "durations": [
+          {
+            "duration": 2.238771817,
+            "location": "hotel_booking_form.feature:12"
+          },
+          {
+            "duration": 1.226887653,
+            "location": "hotel_booking_form.feature:16"
+          }
+        ]
+      }
+    ]
+  }
+]

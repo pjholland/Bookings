@@ -89,7 +89,7 @@ public class BookingFormPage extends BasePage {
 
         type(Locators.id, firstName, visitor.getFirstName());
         type(Locators.id, lastName, visitor.getLastName());
-        type(Locators.id, totalPrice, "");
+        type(Locators.id, totalPrice, "99.99");
         selectFromDropDownList(deposit, "false");
         type(Locators.id, checkInDate, "2018-05-01");
         type(Locators.id, checkOutDate, "2018-05-05");

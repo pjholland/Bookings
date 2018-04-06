@@ -1,4 +1,4 @@
-@current1
+@current
 Feature: Hotel Booking Form
 
         In order to maintain an on-line booking service
@@ -7,7 +7,7 @@ Feature: Hotel Booking Form
 
       Background:
           Given the visitor is on the hotel booking form page
-  @leave_window_open
+
        Scenario: An online visitor can book a hotel room
            And the visitor makes a booking
            Then their booking will appear on the form
