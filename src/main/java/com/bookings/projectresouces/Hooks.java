@@ -29,7 +29,7 @@ public class Hooks extends BasePage {
     }
 
     // Global screenshot taker - takes screenshot after each fail
-    @After
+    //@After
     public void tearDown(Scenario result)
     {
         //on failure, embed a screenshot in the test report
@@ -44,7 +44,7 @@ public class Hooks extends BasePage {
        // webDriverSingleton.getInstance(webDriverSingleton.Browsers.chrome).quit();
     }
 
-    // Not tested
+    //leaves the windo open at the point of fail
     @After("@leave_window_open")
     public void leave_window_open(Scenario scenario) {
         if (scenario.isFailed()) {

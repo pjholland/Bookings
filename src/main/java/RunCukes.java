@@ -7,10 +7,11 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
  features = {"src/test/resources"},
-          plugin = {"pretty", "html:target/reports/cucumber/html", "json:target/cucumber.json", "usage:target/usage.jsonx", "junit:target/junit.xml"},
+         // glue = {"src/main/java/com/bookings/stepdefinitions"},
+         plugin = {"pretty", "html:target/reports/cucumber/html", "json:target/cucumber.json", "usage:target/usage.jsonx", "junit:target/junit.xml"},
          // Run every thing but ignore @wip and @fail
          // tags = {"~@wip","~@fail"}, strict = true)
-         tags = {"@current"}, strict = true)
+         tags = {"@current"}, strict = true, monochrome = true)
 
 public class RunCukes {
 

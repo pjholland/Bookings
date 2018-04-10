@@ -64,6 +64,13 @@ public class BasePage {
         assertEquals(actualTitle, pageTitle);
     }
 
+    // Allows for the selection of an element from a list of elements of the same type - e.g class name - not tested
+    public void clickOnAnElementFromAList(String elementName, int elementNumber) throws Exception {
+       WebElement elementToClick = getDriver().findElements(By.className(elementName)).get(elementNumber);
+       elementToClick.click();
+
+    }
+
     /////////////////////////////////////////
     //waiting functionality
     /////////////////////////////////////////

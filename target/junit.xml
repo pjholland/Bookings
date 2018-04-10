@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="19.954637">
-<testcase classname="Hotel Booking Form" name="An online visitor can book a hotel room" time="8.916114">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="18.031938">
+<testcase classname="Hotel Booking Form" name="An online visitor can book a hotel room" time="9.543436">
 <system-out><![CDATA[Given the visitor is on the hotel booking form page.........................passed
 And the visitor makes a booking.............................................passed
 Then their booking will appear on the form..................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Hotel Booking Form" name="Each booking will have an associated Delete button" time="4.420384">
+<testcase classname="Hotel Booking Form" name="Each booking will have an associated Delete button" time="2.916456">
 <system-out><![CDATA[Given the visitor is on the hotel booking form page.........................passed
 And the visitor makes a booking.............................................passed
 Then each booking will have a Delete button.................................passed
 And their booking will appear on the form...................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Hotel Booking Form" name="An on line visitor can delete their booking" time="5.274577">
+<testcase classname="Hotel Booking Form" name="An on line visitor can delete their booking" time="4.87395">
 <system-out><![CDATA[Given the visitor is on the hotel booking form page.........................passed
 And the visitor decides to delete their booking.............................passed
 Then the booking will no longer be visible on the form......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Hotel Booking Form" name="An online visitor is must fill in all fields before making a booking" time="1.343562">
+<testcase classname="Hotel Booking Form" name="An online visitor is must fill in all fields before making a booking" time="0.698096">
 <system-out><![CDATA[Given the visitor is on the hotel booking form page.........................passed
 When the visitor attempts to save the booking form without completing all fields.passed
 Then the booking will not be made...........................................passed

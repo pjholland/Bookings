@@ -12,13 +12,12 @@ import static org.junit.Assert.assertEquals;
 
 public class BookingFormPage extends BasePage {
 
-    String firstName    = ("firstname");
-    String lastName     = ("lastname");
-    String totalPrice   = ("totalprice");
-    String deposit      = ("depositpaid");
-    String checkInDate  = ("checkin");
-    String checkOutDate = ("checkout");
-    String saveButton   = ("#form > div > div:nth-child(7) > input[type=\"button\"]");
+    private  String firstName    = ("firstname");
+    private  String lastName     = ("lastname");
+    private  String totalPrice   = ("totalprice");
+    private  String deposit      = ("depositpaid");
+    private  String checkInDate  = ("checkin");private String checkOutDate = ("checkout");
+    private  String saveButton   = ("#form > div > div:nth-child(7) > input[type=\"button\"]");
 
     public void open() {
         // Note hard coded URL used here - this would not happen in production code
@@ -75,12 +74,27 @@ public class BookingFormPage extends BasePage {
         wait(2);
         List<WebElement> deleteButtons = getDriver().findElements(By.xpath("//*[@value=\"Delete\"]"));
 
+        for (int i = 0; i < deleteButtons.size(); ++i) {
+            wait(2);
+            WebElement buttons = deleteButtons.get(i).findElement(By.xpath("//*[@value=\"Delete\"]"));
+            wait(2);
+            buttons.click();
+        }
+    }
+
+    public void deleteAParticularBooking() throws InterruptedException {
+
+        // Need sleep here to allow for stale element reference
+        wait(2);
+        List<WebElement> deleteButtons = getDriver().findElements(By.xpath("//*[@value=\"Delete\"]"));
+
         for(int i = 0; i < deleteButtons.size(); ++i) {
             wait(2);
             WebElement buttons = deleteButtons.get(i).findElement(By.xpath("//*[@value=\"Delete\"]"));
             wait(2);
             buttons.click();
         }
+
     }
 
     public void createVisitorWithUniqueName() throws Exception {

@@ -28,7 +28,7 @@ formatter.match({
   "location": "BookingFormStep.the_visitor_is_on_the_hotel_booking_form_page()"
 });
 formatter.result({
-  "duration": 3201100195,
+  "duration": 3753392581,
   "status": "passed"
 });
 formatter.scenario({
@@ -53,18 +53,14 @@ formatter.match({
   "location": "BookingFormStep.the_visitor_makes_a_booking()"
 });
 formatter.result({
-  "duration": 2238771817,
+  "duration": 1725591255,
   "status": "passed"
 });
 formatter.match({
   "location": "BookingFormStep.their_booking_will_appear_on_the_form()"
 });
 formatter.result({
-  "duration": 3471335183,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 4906970,
+  "duration": 4064451935,
   "status": "passed"
 });
 formatter.background({
@@ -83,7 +79,7 @@ formatter.match({
   "location": "BookingFormStep.the_visitor_is_on_the_hotel_booking_form_page()"
 });
 formatter.result({
-  "duration": 367826319,
+  "duration": 369988525,
   "status": "passed"
 });
 formatter.scenario({
@@ -113,25 +109,21 @@ formatter.match({
   "location": "BookingFormStep.the_visitor_makes_a_booking()"
 });
 formatter.result({
-  "duration": 1226887653,
+  "duration": 1192419976,
   "status": "passed"
 });
 formatter.match({
   "location": "BookingFormStep.each_booking_will_have_a_Delete_button()"
 });
 formatter.result({
-  "duration": 112075273,
+  "duration": 63415209,
   "status": "passed"
 });
 formatter.match({
   "location": "BookingFormStep.their_booking_will_appear_on_the_form()"
 });
 formatter.result({
-  "duration": 2713528499,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 66001,
+  "duration": 1290632535,
   "status": "passed"
 });
 formatter.background({
@@ -150,7 +142,7 @@ formatter.match({
   "location": "BookingFormStep.the_visitor_is_on_the_hotel_booking_form_page()"
 });
 formatter.result({
-  "duration": 348289791,
+  "duration": 270416589,
   "status": "passed"
 });
 formatter.scenario({
@@ -175,18 +167,14 @@ formatter.match({
   "location": "BookingFormStep.the_visitor_decides_to_delete_their_booking()"
 });
 formatter.result({
-  "duration": 4851412676,
+  "duration": 4564102621,
   "status": "passed"
 });
 formatter.match({
   "location": "BookingFormStep.the_booking_will_no_longer_be_visible_on_the_form()"
 });
 formatter.result({
-  "duration": 74834503,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 39908,
+  "duration": 39430795,
   "status": "passed"
 });
 formatter.background({
@@ -205,7 +193,7 @@ formatter.match({
   "location": "BookingFormStep.the_visitor_is_on_the_hotel_booking_form_page()"
 });
 formatter.result({
-  "duration": 430437405,
+  "duration": 285647261,
   "status": "passed"
 });
 formatter.scenario({
@@ -230,18 +218,14 @@ formatter.match({
   "location": "BookingFormStep.the_visitor_attempts_to_save_the_booking_form_without_completing_all_fields()"
 });
 formatter.result({
-  "duration": 892787695,
+  "duration": 394151845,
   "status": "passed"
 });
 formatter.match({
   "location": "BookingFormStep.the_booking_will_not_be_made()"
 });
 formatter.result({
-  "duration": 20292724,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 44088,
+  "duration": 18296818,
   "status": "passed"
 });
 });

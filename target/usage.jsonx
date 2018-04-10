@@ -5,12 +5,12 @@
       {
         "name": "each booking will have a Delete button",
         "aggregatedDurations": {
-          "average": 0.112075273,
-          "median": 0.112075273
+          "average": 0.063415209,
+          "median": 0.063415209
         },
         "durations": [
           {
-            "duration": 0.112075273,
+            "duration": 0.063415209,
             "location": "hotel_booking_form.feature:17"
           }
         ]
@@ -23,12 +23,12 @@
       {
         "name": "the visitor decides to delete their booking",
         "aggregatedDurations": {
-          "average": 4.851412676,
-          "median": 4.851412676
+          "average": 4.564102621,
+          "median": 4.564102621
         },
         "durations": [
           {
-            "duration": 4.851412676,
+            "duration": 4.564102621,
             "location": "hotel_booking_form.feature:21"
           }
         ]
@@ -41,12 +41,12 @@
       {
         "name": "the visitor attempts to save the booking form without completing all fields",
         "aggregatedDurations": {
-          "average": 0.892787695,
-          "median": 0.892787695
+          "average": 0.394151845,
+          "median": 0.394151845
         },
         "durations": [
           {
-            "duration": 0.892787695,
+            "duration": 0.394151845,
             "location": "hotel_booking_form.feature:25"
           }
         ]
@@ -59,12 +59,12 @@
       {
         "name": "the booking will no longer be visible on the form",
         "aggregatedDurations": {
-          "average": 0.074834503,
-          "median": 0.074834503
+          "average": 0.039430795,
+          "median": 0.039430795
         },
         "durations": [
           {
-            "duration": 0.074834503,
+            "duration": 0.039430795,
             "location": "hotel_booking_form.feature:22"
           }
         ]
@@ -77,16 +77,16 @@
       {
         "name": "their booking will appear on the form",
         "aggregatedDurations": {
-          "average": 3.092431841,
-          "median": 3.092431841
+          "average": 2.677542235,
+          "median": 2.677542235
         },
         "durations": [
           {
-            "duration": 3.471335183,
+            "duration": 4.064451935,
             "location": "hotel_booking_form.feature:13"
           },
           {
-            "duration": 2.713528499,
+            "duration": 1.290632535,
             "location": "hotel_booking_form.feature:18"
           }
         ]
@@ -99,12 +99,12 @@
       {
         "name": "the booking will not be made",
         "aggregatedDurations": {
-          "average": 0.020292724,
-          "median": 0.020292724
+          "average": 0.018296818,
+          "median": 0.018296818
         },
         "durations": [
           {
-            "duration": 0.020292724,
+            "duration": 0.018296818,
             "location": "hotel_booking_form.feature:26"
           }
         ]
@@ -117,24 +117,24 @@
       {
         "name": "the visitor is on the hotel booking form page",
         "aggregatedDurations": {
-          "average": 1.086913427,
-          "median": 0.399131862
+          "average": 1.169861239,
+          "median": 0.327817893
         },
         "durations": [
           {
-            "duration": 3.201100195,
+            "duration": 3.753392581,
             "location": "hotel_booking_form.feature:9"
           },
           {
-            "duration": 0.367826319,
+            "duration": 0.369988525,
             "location": "hotel_booking_form.feature:9"
           },
           {
-            "duration": 0.348289791,
+            "duration": 0.270416589,
             "location": "hotel_booking_form.feature:9"
           },
           {
-            "duration": 0.430437405,
+            "duration": 0.285647261,
             "location": "hotel_booking_form.feature:9"
           }
         ]
@@ -147,16 +147,16 @@
       {
         "name": "the visitor makes a booking",
         "aggregatedDurations": {
-          "average": 1.732829735,
-          "median": 1.732829735
+          "average": 1.459005615,
+          "median": 1.459005615
         },
         "durations": [
           {
-            "duration": 2.238771817,
+            "duration": 1.725591255,
             "location": "hotel_booking_form.feature:12"
           },
           {
-            "duration": 1.226887653,
+            "duration": 1.192419976,
             "location": "hotel_booking_form.feature:16"
           }
         ]
